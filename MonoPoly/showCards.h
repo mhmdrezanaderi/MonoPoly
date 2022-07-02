@@ -18,9 +18,27 @@ class showCards : public QMainWindow
 public:
    explicit showCards(QWidget *parent = nullptr);
 
+
+   void setVal(QString  nameOfHouse_c,int rent_c,int oneHouse_c ,int twoHouses_c ,int threeHouses_c  ,int fourHouses_c  ,int hotel_c  ,int mortgageVal_c ,int housesCost_c  ,int hotelCost_c);
+    QString nameOfHouse;
+    int rent;
+    int oneHouse;
+    int twoHouses;
+    int threeHouses;
+    int fourHouses;
+    int hotel;
+    int mortgageVal;
+    int housesCost;
+    int hotelCost;
+
+    QString backgroundColor;
+    void setbackgroundColor( QString backgroundColor_c);
+    void setUi();
 private slots:
 
 
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::showCards *ui;
