@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QPixmap>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
