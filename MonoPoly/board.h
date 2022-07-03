@@ -6,7 +6,10 @@
 #include "QWidget"
 #include <QPixmap>
 #include "showCards.h"
-
+#include <ctime>
+#include <cstdlib>
+#include "iostream"
+using namespace std ;
 QT_BEGIN_NAMESPACE
 namespace Ui { class board; }
 QT_END_NAMESPACE
@@ -26,7 +29,15 @@ public:
     showCards lightBlue[3];
     showCards lightPurple[3];
     showCards orange[3];
-    void colorOfCards();
+     int result ;
+
+
+    QString nameOfPlayerss[8];
+    int countOfPlayers;
+     void playerCount(QString names[8], int count);
+     void setPlayerInfoVal();
+
+//       int moneys[8];
 private slots:
 
     void on_pushButton_red1_clicked();
@@ -52,6 +63,8 @@ private slots:
     void on_pushButton_orange2_clicked();
     void on_pushButton_orange3_clicked();
 
+
+    void on_pushButton_5_clicked();
 
 private:
     Ui::board *ui;

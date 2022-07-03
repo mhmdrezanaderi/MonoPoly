@@ -9,7 +9,6 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    allplayers.cpp \
     board.cpp \
     cards.cpp \
     main.cpp \
@@ -17,14 +16,12 @@ SOURCES += \
     showCards.cpp
 
 HEADERS += \
-    allplayers.h \
     board.h \
     cards.h \
     mainwindow.h \
     showCards.h
 
 FORMS += \
-    allplayers.ui \
     board.ui \
     mainwindow.ui \
     showCards.ui

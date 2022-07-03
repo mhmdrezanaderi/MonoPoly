@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1344</width>
-    <height>900</height>
+    <width>1842</width>
+    <height>907</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,10 +24,10 @@ color:rgb(0, 0, 0)</string>
    <widget class="QWidget" name="horizontalLayoutWidget_9">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>230</x>
       <y>760</y>
-      <width>941</width>
-      <height>111</height>
+      <width>1071</width>
+      <height>121</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_35" stretch="2,1,0,2,2,2,2">
@@ -76,8 +76,20 @@ color:rgb(0, 0, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_lightBlue3">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
-          <string>Kentucky Avenue($220</string>
+          <string>Kentucky Avenue
+($220)</string>
          </property>
          <property name="checkable">
           <bool>false</bool>
@@ -95,19 +107,6 @@ color:rgb(0, 0, 0)</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_76">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -150,6 +149,17 @@ color:rgb(0, 0, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_lightBlue2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Indiana Avenue
 ($220</string>
@@ -171,19 +181,6 @@ color:rgb(0, 0, 0)</string>
          </property>
         </widget>
        </item>
-       <item>
-        <spacer name="verticalSpacer_78">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </item>
      <item>
@@ -203,6 +200,17 @@ color:rgb(0, 0, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_67">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Chance</string>
          </property>
@@ -222,19 +230,6 @@ color:rgb(0, 0, 0)</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_80">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -271,6 +266,17 @@ color:rgb(0, 0, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_lightBlue1">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Illinois Avenue
 ($240)</string>
@@ -291,19 +297,6 @@ color:rgb(0, 0, 0)</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_82">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -340,6 +333,17 @@ color:rgb(0, 0, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_purple2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Baltic Avenue</string>
          </property>
@@ -360,19 +364,6 @@ color:rgb(0, 0, 0)</string>
          </property>
         </widget>
        </item>
-       <item>
-        <spacer name="verticalSpacer_84">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </item>
      <item>
@@ -392,6 +383,17 @@ color:rgb(0, 0, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_71">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Community Chest</string>
          </property>
@@ -411,19 +413,6 @@ color:rgb(0, 0, 0)</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_86">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -460,6 +449,17 @@ color:rgb(0, 0, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_purple1">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Mediterranean Avenue
 ($60) </string>
@@ -481,46 +481,17 @@ color:rgb(0, 0, 0)</string>
          </property>
         </widget>
        </item>
-       <item>
-        <spacer name="verticalSpacer_88">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </item>
     </layout>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>192</x>
-      <y>110</y>
-      <width>937</width>
-      <height>650</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: 2px solid black</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QWidget" name="verticalLayoutWidget_8">
     <property name="geometry">
      <rect>
-      <x>1130</x>
-      <y>110</y>
-      <width>212</width>
-      <height>651</height>
+      <x>1316</x>
+      <y>135</y>
+      <width>186</width>
+      <height>621</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_20">
@@ -529,23 +500,15 @@ color:rgb(0, 0, 0)</string>
      </property>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_17">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetFixedSize</enum>
+       </property>
        <property name="topMargin">
         <number>5</number>
        </property>
        <property name="bottomMargin">
         <number>5</number>
        </property>
-       <item>
-        <widget class="QLabel" name="label_orange3_3">
-         <property name="styleSheet">
-          <string notr="true">background-color:rgb(0, 85, 0);
-color:rgb(0, 85, 0)</string>
-         </property>
-         <property name="text">
-          <string>....</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <spacer name="horizontalSpacer_30">
          <property name="orientation">
@@ -561,6 +524,17 @@ color:rgb(0, 85, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_green1">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>New York Avenue
 ($200)</string>
@@ -569,19 +543,6 @@ color:rgb(0, 85, 0)</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_31">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -593,17 +554,6 @@ color:rgb(0, 85, 0)</string>
        <property name="bottomMargin">
         <number>5</number>
        </property>
-       <item>
-        <widget class="QLabel" name="label_orange2_3">
-         <property name="styleSheet">
-          <string notr="true">background-color:rgb(0, 85, 0);
-color:rgb(0, 85, 0)</string>
-         </property>
-         <property name="text">
-          <string>....</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <spacer name="horizontalSpacer_32">
          <property name="orientation">
@@ -619,6 +569,17 @@ color:rgb(0, 85, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_green2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>New York Avenue
 ($200)</string>
@@ -627,19 +588,6 @@ color:rgb(0, 85, 0)</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_33">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -666,6 +614,17 @@ color:rgb(0, 85, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_33">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">color:(200,200,200)</string>
          </property>
@@ -677,19 +636,6 @@ color:rgb(0, 85, 0)</string>
          </property>
         </widget>
        </item>
-       <item>
-        <spacer name="horizontalSpacer_35">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </item>
      <item>
@@ -700,17 +646,6 @@ color:rgb(0, 85, 0)</string>
        <property name="bottomMargin">
         <number>5</number>
        </property>
-       <item>
-        <widget class="QLabel" name="label_orange1_3">
-         <property name="styleSheet">
-          <string notr="true">background-color:rgb(0, 85, 0);
-color:rgb(0, 85, 0)</string>
-         </property>
-         <property name="text">
-          <string>....</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <spacer name="horizontalSpacer_36">
          <property name="orientation">
@@ -726,6 +661,17 @@ color:rgb(0, 85, 0)</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_green3">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>New York Avenue
 ($200)</string>
@@ -734,19 +680,6 @@ color:rgb(0, 85, 0)</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_37">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -758,17 +691,6 @@ color:rgb(0, 85, 0)</string>
        <property name="bottomMargin">
         <number>5</number>
        </property>
-       <item>
-        <widget class="QLabel" name="label_8">
-         <property name="styleSheet">
-          <string notr="true">background-color:rgb(0, 0, 127);
-color:rgb(0, 0, 127);</string>
-         </property>
-         <property name="text">
-          <string>....</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <spacer name="horizontalSpacer_38">
          <property name="orientation">
@@ -784,6 +706,17 @@ color:rgb(0, 0, 127);</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_blue1">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">color:(200,200,200)</string>
          </property>
@@ -795,19 +728,6 @@ color:rgb(0, 0, 127);</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_39">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -828,6 +748,17 @@ color:rgb(0, 0, 127);</string>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_43">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Chance</string>
          </property>
@@ -835,19 +766,6 @@ color:rgb(0, 0, 127);</string>
           <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_41">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
@@ -859,17 +777,6 @@ color:rgb(0, 0, 127);</string>
        <property name="bottomMargin">
         <number>5</number>
        </property>
-       <item>
-        <widget class="QLabel" name="label_lightpurple1_3">
-         <property name="styleSheet">
-          <string notr="true">background-color:rgb(0, 0, 127);
-color:rgb(0, 0, 127);</string>
-         </property>
-         <property name="text">
-          <string>....</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <spacer name="horizontalSpacer_42">
          <property name="orientation">
@@ -888,6 +795,17 @@ color:rgb(0, 0, 127);</string>
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">color:(200,200,200)</string>
          </property>
@@ -900,19 +818,6 @@ color:rgb(0, 0, 127);</string>
          </property>
         </widget>
        </item>
-       <item>
-        <spacer name="horizontalSpacer_48">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
       </layout>
      </item>
     </layout>
@@ -920,8 +825,8 @@ color:rgb(0, 0, 127);</string>
    <widget class="QLabel" name="chanceCards">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>160</y>
+      <x>290</x>
+      <y>190</y>
       <width>211</width>
       <height>101</height>
      </rect>
@@ -933,10 +838,10 @@ color:rgb(0, 0, 127);</string>
    <widget class="QWidget" name="verticalLayoutWidget_7">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>110</y>
-      <width>191</width>
-      <height>651</height>
+      <x>10</x>
+      <y>130</y>
+      <width>221</width>
+      <height>631</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -952,20 +857,18 @@ color:rgb(0, 0, 127);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="horizontalSpacer_9">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_orange3">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>New York Avenue
 ($200)</string>
@@ -1013,20 +916,18 @@ color:rgb(255, 85, 0);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="horizontalSpacer_13">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_orange2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>New York Avenue
 ($200)</string>
@@ -1065,20 +966,18 @@ color:rgb(255, 85, 0);</string>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_18">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">color:(200,200,200)</string>
          </property>
@@ -1117,20 +1016,18 @@ color:rgb(255, 85, 0);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="horizontalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_orange1">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>New York Avenue
 ($200)</string>
@@ -1175,20 +1072,18 @@ color:rgb(255, 85, 0);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="horizontalSpacer_11">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_lightPurple3">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">color:(200,200,200)</string>
          </property>
@@ -1236,20 +1131,18 @@ color:rgb(153, 0, 229);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="horizontalSpacer_7">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_lightPurple2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">color:(200,200,200)</string>
          </property>
@@ -1297,22 +1190,20 @@ color:rgb(153, 0, 229);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="horizontalSpacer_5">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_lightPurple1">
          <property name="enabled">
           <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">color:(200,200,200)</string>
@@ -1360,13 +1251,13 @@ color:rgb(153, 0, 229);</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>230</x>
       <y>0</y>
-      <width>941</width>
-      <height>111</height>
+      <width>1071</width>
+      <height>131</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,1,2,2,2,2,2">
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,1,2,0,2,2,2">
      <property name="spacing">
       <number>0</number>
      </property>
@@ -1379,25 +1270,24 @@ color:rgb(153, 0, 229);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="verticalSpacer_15">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_red1">
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
-          <string>Kentucky Avenue($220</string>
+          <string>Kentucky Avenue
+($220</string>
          </property>
          <property name="checkable">
           <bool>false</bool>
@@ -1451,20 +1341,18 @@ color:rgb(153, 0, 229);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_2">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
           <string>Chance</string>
          </property>
@@ -1509,22 +1397,20 @@ color:rgb(153, 0, 229);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="verticalSpacer_5">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_red2">
          <property name="enabled">
           <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="text">
           <string>Indiana Avenue
@@ -1582,22 +1468,20 @@ color:rgb(153, 0, 229);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_red3">
          <property name="enabled">
           <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="text">
           <string>Illinois Avenue
@@ -1655,28 +1539,24 @@ color:rgb(153, 0, 229);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="verticalSpacer_9">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_yellow1">
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
-          <string>Atlantic Avenue ($260)</string>
+          <string>Atlantic Avenue 
+($260)</string>
          </property>
          <property name="checkable">
           <bool>false</bool>
@@ -1736,25 +1616,24 @@ color:rgb(229, 229, 0);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="verticalSpacer_11">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_yellow2">
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
-          <string>Ventnor Avenue($260) </string>
+          <string>Ventnor Avenue
+($260) </string>
          </property>
          <property name="checkable">
           <bool>false</bool>
@@ -1808,22 +1687,20 @@ color:rgb(229, 229, 0);</string>
         <number>5</number>
        </property>
        <item>
-        <spacer name="verticalSpacer_7">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="pushButton_yellow3">
          <property name="enabled">
           <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="text">
           <string>Marvin Gardens
@@ -1874,13 +1751,946 @@ color:rgb(229, 229, 0);</string>
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>60</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Go To Jail</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>810</y>
+      <width>131</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>In Jail/Just Visiting </string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>40</y>
+      <width>101</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Free Parking</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>410</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Ur Turn</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="number2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>410</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="number1">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>410</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_orange3_3">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>140</y>
+      <width>16</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 85, 0);
+color:rgb(0, 85, 0)</string>
+    </property>
+    <property name="text">
+     <string>....</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_orange2_3">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>230</y>
+      <width>16</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 85, 0);
+color:rgb(0, 85, 0)</string>
+    </property>
+    <property name="text">
+     <string>....</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_orange1_3">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>401</y>
+      <width>16</width>
+      <height>79</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 85, 0);
+color:rgb(0, 85, 0)</string>
+    </property>
+    <property name="text">
+     <string>....</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>491</y>
+      <width>16</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 0, 127);
+color:rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>....</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lightpurple1_3">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>580</y>
+      <width>16</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 0, 127);
+color:rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>....</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lightpurple1_4">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>670</y>
+      <width>16</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 0, 127);
+color:rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>....</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>20</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Playe Info</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>1504</x>
+      <y>-20</y>
+      <width>16</width>
+      <height>901</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>310</y>
+      <width>281</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7"/>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player1">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>70</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 1 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player1">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player1">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player2">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>170</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 2 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_43">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_19">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_44">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player2">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player2">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player3">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>270</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 3 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_47">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_20">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_48">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player3">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player3">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player4">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>370</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 4 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_51">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_21">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_52">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player4">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player4">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player5">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>470</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 5 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_55">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_22">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_56">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player5">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player5">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player6">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>570</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 6 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_59">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_23">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_60">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player6">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player6">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player7">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>670</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 7 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_63">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_24">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_65">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player7">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player7">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_player8">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>770</y>
+      <width>279</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Player 8 :</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>261</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_68">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_25">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_69">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Money :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_money_player8">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_status_player8">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1344</width>
+     <width>1842</width>
      <height>25</height>
     </rect>
    </property>
