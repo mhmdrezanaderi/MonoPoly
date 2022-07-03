@@ -6,6 +6,8 @@
 #include <QPixmap>
 #include "QDebug"
 #include "showCards.h"
+#include "iostream"
+using namespace std;
 board::board(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::board)
@@ -57,7 +59,8 @@ void board::playerCount(QString names[8], int count)
 {
     for (int i=0 ;i < count ;i++ ) {
         nameOfPlayerss[i] = names[i];
-//        money[i]=1500;
+        money[i]=1500;
+        turnU[i][0]=i;
     }
     countOfPlayers = count;
 
@@ -75,8 +78,8 @@ void board::setPlayerInfoVal()
 
               ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
               ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
-//               ui->label_money_player1->setText("1500");
-//                ui->label_money_player2->setText("1500");
+              ui->label_money_player1->setText(QString::number(money[0]));
+              ui->label_money_player2->setText(QString::number(money[1]));
               ui->label_status_player1->setText("ok");
               ui->label_status_player2->setText("ok");
             break;
@@ -88,6 +91,10 @@ void board::setPlayerInfoVal()
             ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
             ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
             ui->groupBox_player3->setTitle(nameOfPlayerss[2]);
+
+            ui->label_money_player1->setText(QString::number(money[0]));
+            ui->label_money_player2->setText(QString::number(money[1]));
+            ui->label_money_player3->setText(QString::number(money[2]));
 
             ui->label_status_player1->setText("ok");
             ui->label_status_player2->setText("ok");
@@ -105,10 +112,10 @@ void board::setPlayerInfoVal()
         ui->groupBox_player4->setTitle(nameOfPlayerss[3]);
 
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
 
         ui->label_status_player1->setText("ok");
         ui->label_status_player2->setText("ok");
@@ -122,11 +129,11 @@ void board::setPlayerInfoVal()
         ui->groupBox_player4->show();
         ui->groupBox_player5->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
         ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
@@ -148,12 +155,12 @@ void board::setPlayerInfoVal()
         ui->groupBox_player5->show();
         ui->groupBox_player6->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
-//        ui->label_money_player6->setText(QString::number(money[5]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player6->setText(QString::number(money[5]));
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
         ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
@@ -178,13 +185,13 @@ void board::setPlayerInfoVal()
         ui->groupBox_player6->show();
         ui->groupBox_player7->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
-//        ui->label_money_player6->setText(QString::number(money[5]));
-//        ui->label_money_player7->setText(QString::number(money[6]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player6->setText(QString::number(money[5]));
+        ui->label_money_player7->setText(QString::number(money[6]));
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
         ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
@@ -212,14 +219,14 @@ void board::setPlayerInfoVal()
         ui->groupBox_player7->show();
         ui->groupBox_player8->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
-//        ui->label_money_player6->setText(QString::number(money[5]));
-//        ui->label_money_player7->setText(QString::number(money[6]));
-//        ui->label_money_player8->setText(QString::number(money[7]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player6->setText(QString::number(money[5]));
+        ui->label_money_player7->setText(QString::number(money[6]));
+        ui->label_money_player8->setText(QString::number(money[7]));
 
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
@@ -461,6 +468,8 @@ void board::on_pushButton_orange3_clicked()
 
 void board::on_pushButton_5_clicked()
 {
+
+
     srand(time(0));  // Initialize random number generator.
     int number1 = (rand()%6)+1;
     int number2 = (rand()%6)+1;
@@ -521,6 +530,51 @@ void board::on_pushButton_5_clicked()
 
       QPixmap image2(addressImage2);
       ui->number2->setPixmap(image2.scaled(ui->number2->width(),ui->number2->height(),Qt::KeepAspectRatio));
+
+
+        static int i =0;
+        tas[i]=result;
+        if(i+1==countOfPlayers)
+        {
+            resultTas();
+
+            ui->pushButton_5->hide();
+
+        }
+        i++;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void board::resultTas()
+{
+
+    for (int i=0;i < countOfPlayers  ;i++ ) {
+        int tartib=0;
+
+            for (int j=0; j<countOfPlayers ;j++ ) {
+                if(tas[i]<tas[j])
+                {
+                    tartib ++ ;
+                }
+            }
+        turnU[i][1]=tartib;
+        qDebug () << "player :"<< turnU[i][0] << "   "<< "turn :" << turnU[i][1];
+
+    }
+
+
+}
 

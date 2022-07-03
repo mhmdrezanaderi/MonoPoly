@@ -2057,17 +2057,6 @@ color:rgb(0, 0, 127);</string>
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>310</y>
-      <width>281</width>
-      <height>331</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_7"/>
-   </widget>
    <widget class="QGroupBox" name="groupBox_player1">
     <property name="geometry">
      <rect>

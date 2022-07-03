@@ -29,15 +29,17 @@ public:
     showCards lightBlue[3];
     showCards lightPurple[3];
     showCards orange[3];
+    void resultTas();
      int result ;
-
+    int turnU[8][2];
+     int money[8];
+     int tas[8];
 
     QString nameOfPlayerss[8];
     int countOfPlayers;
      void playerCount(QString names[8], int count);
      void setPlayerInfoVal();
 
-//       int moneys[8];
 private slots:
 
     void on_pushButton_red1_clicked();
