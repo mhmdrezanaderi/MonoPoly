@@ -6,9 +6,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    MainWindow w;
-    board d;
-    d.show();
+    MainWindow w;
+
 
 //    showCards red;
 //    red.setVal("Kentucky Avenue ",18,90,250,700,875,1050,110,150,150);
@@ -18,6 +17,6 @@ int main(int argc, char *argv[])
 //    showCards g;
 //    g.show();
 
-//    w.show();
+    w.show();
     return a.exec();
 }
