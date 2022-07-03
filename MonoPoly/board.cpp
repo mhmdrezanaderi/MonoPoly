@@ -6,6 +6,10 @@
 #include <QPixmap>
 #include "QDebug"
 #include "showCards.h"
+#include "iostream"
+#include "UsersData.h"
+
+using namespace std;
 board::board(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::board)
@@ -22,32 +26,37 @@ board::board(QWidget *parent)
     ui->pushButton_red1->setText("Kentucky Avenue ($220)");
     ui->pushButton_red2->setText("Indiana Avenue ($220)");
     ui->pushButton_red3->setText("Illinois Avenue ($240)");
-
     ui->pushButton_yellow1->setText("Atlantic Avenue ($260)");
     ui->pushButton_yellow2->setText("Ventnor Avenue (260)");
     ui->pushButton_yellow3->setText("Marvin Gardens ($280)");
-
     ui->pushButton_green1->setText("Pacific Avenue ($300)");
     ui->pushButton_green2->setText("North Carolina Avenue ($300)");
     ui->pushButton_green3->setText("Pennsylvania Avenue ($320)");
-
     ui->pushButton_blue1->setText("Park Place ($350)");
     ui->pushButton_blue2->setText("Boardwalk ($400)");
-
     ui->pushButton_purple1->setText("Mediterranean Avenue ($60)");
     ui->pushButton_purple2->setText("Baltic Avenue ($60)");
 
     ui->groupBox_player1->hide();
     ui->groupBox_player2->hide();
-
     ui->groupBox_player3->hide();
     ui->groupBox_player4->hide();
-
     ui->groupBox_player5->hide();
     ui->groupBox_player6->hide();
-
     ui->groupBox_player7->hide();
     ui->groupBox_player8->hide();
+
+    ui->label_player1->hide();
+    ui->label_player2->hide();
+    ui->label_player3->hide();
+    ui->label_player4->hide();
+    ui->label_player5->hide();
+    ui->label_player6->hide();
+    ui->label_player7->hide();
+    ui->label_player8->hide();
+
+
+
 
 }
 
@@ -57,11 +66,118 @@ void board::playerCount(QString names[8], int count)
 {
     for (int i=0 ;i < count ;i++ ) {
         nameOfPlayerss[i] = names[i];
-//        money[i]=1500;
+        money[i]=1500;
+        turnU[i][0]=i;
     }
     countOfPlayers = count;
 
 }
+void board::showPlayeInMap(int number)
+{
+
+    QPixmap player1("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player1.png");
+    QPixmap player2("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player2.png");
+    QPixmap player3("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player3.png");
+    QPixmap player4("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player4.png");
+    QPixmap player5("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player5.png");
+    QPixmap player6("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player6.png");
+    QPixmap player7("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player7.png");
+    QPixmap player8("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player8.png");
+
+    switch (number) {
+
+     case 2:
+        ui->label_player1->show();
+        ui->label_player2->show();
+
+        ui->label_player1->setPixmap(player1.scaled(ui->label_player1->width(),ui->label_player1->height(),Qt::KeepAspectRatio));
+        ui->label_player2->setPixmap(player2.scaled(ui->label_player2->width(),ui->label_player2->height(),Qt::KeepAspectRatio));
+        break;
+    case 3:
+        ui->label_player1->show();
+        ui->label_player2->show();
+        ui->label_player3->show();
+        ui->label_player1->setPixmap(player1.scaled(ui->label_player1->width(),ui->label_player1->height(),Qt::KeepAspectRatio));
+        ui->label_player2->setPixmap(player2.scaled(ui->label_player2->width(),ui->label_player2->height(),Qt::KeepAspectRatio));
+        ui->label_player3->setPixmap(player3.scaled(ui->label_player3->width(),ui->label_player3->height(),Qt::KeepAspectRatio));
+        break;
+    case 4:
+        ui->label_player1->show();
+        ui->label_player2->show();
+        ui->label_player3->show();
+        ui->label_player4->show();
+        ui->label_player1->setPixmap(player1.scaled(ui->label_player1->width(),ui->label_player1->height(),Qt::KeepAspectRatio));
+        ui->label_player2->setPixmap(player2.scaled(ui->label_player2->width(),ui->label_player2->height(),Qt::KeepAspectRatio));
+        ui->label_player3->setPixmap(player3.scaled(ui->label_player3->width(),ui->label_player3->height(),Qt::KeepAspectRatio));
+        ui->label_player4->setPixmap(player4.scaled(ui->label_player4->width(),ui->label_player4->height(),Qt::KeepAspectRatio));
+        break;
+    case 5:
+        ui->label_player1->show();
+        ui->label_player2->show();
+        ui->label_player3->show();
+        ui->label_player4->show();
+        ui->label_player5->show();
+        ui->label_player1->setPixmap(player1.scaled(ui->label_player1->width(),ui->label_player1->height(),Qt::KeepAspectRatio));
+        ui->label_player2->setPixmap(player2.scaled(ui->label_player2->width(),ui->label_player2->height(),Qt::KeepAspectRatio));
+        ui->label_player3->setPixmap(player3.scaled(ui->label_player3->width(),ui->label_player3->height(),Qt::KeepAspectRatio));
+        ui->label_player4->setPixmap(player4.scaled(ui->label_player4->width(),ui->label_player4->height(),Qt::KeepAspectRatio));
+        ui->label_player5->setPixmap(player5.scaled(ui->label_player5->width(),ui->label_player5->height(),Qt::KeepAspectRatio));
+        break;
+    case 6:
+        ui->label_player1->show();
+        ui->label_player2->show();
+        ui->label_player3->show();
+        ui->label_player4->show();
+        ui->label_player5->show();
+        ui->label_player6->show();
+        ui->label_player1->setPixmap(player1.scaled(ui->label_player1->width(),ui->label_player1->height(),Qt::KeepAspectRatio));
+        ui->label_player2->setPixmap(player2.scaled(ui->label_player2->width(),ui->label_player2->height(),Qt::KeepAspectRatio));
+        ui->label_player3->setPixmap(player3.scaled(ui->label_player3->width(),ui->label_player3->height(),Qt::KeepAspectRatio));
+        ui->label_player4->setPixmap(player4.scaled(ui->label_player4->width(),ui->label_player4->height(),Qt::KeepAspectRatio));
+        ui->label_player5->setPixmap(player5.scaled(ui->label_player5->width(),ui->label_player5->height(),Qt::KeepAspectRatio));
+        ui->label_player6->setPixmap(player6.scaled(ui->label_player6->width(),ui->label_player6->height(),Qt::KeepAspectRatio));
+        break;
+
+    case 7:
+        ui->label_player1->setPixmap(player1.scaled(ui->label_player1->width(),ui->label_player1->height(),Qt::KeepAspectRatio));
+        ui->label_player2->setPixmap(player2.scaled(ui->label_player2->width(),ui->label_player2->height(),Qt::KeepAspectRatio));
+        ui->label_player3->setPixmap(player3.scaled(ui->label_player3->width(),ui->label_player3->height(),Qt::KeepAspectRatio));
+        ui->label_player4->setPixmap(player4.scaled(ui->label_player4->width(),ui->label_player4->height(),Qt::KeepAspectRatio));
+        ui->label_player5->setPixmap(player5.scaled(ui->label_player5->width(),ui->label_player5->height(),Qt::KeepAspectRatio));
+        ui->label_player6->setPixmap(player6.scaled(ui->label_player6->width(),ui->label_player6->height(),Qt::KeepAspectRatio));
+        ui->label_player7->setPixmap(player7.scaled(ui->label_player7->width(),ui->label_player7->height(),Qt::KeepAspectRatio));
+        ui->label_player1->show();
+        ui->label_player2->show();
+        ui->label_player3->show();
+        ui->label_player4->show();
+        ui->label_player5->show();
+        ui->label_player6->show();
+        ui->label_player7->show();
+        break;
+    case 8:
+        ui->label_player1->show();
+        ui->label_player2->show();
+        ui->label_player3->show();
+        ui->label_player4->show();
+        ui->label_player5->show();
+        ui->label_player6->show();
+        ui->label_player7->show();
+        ui->label_player8->show();
+
+        ui->label_player1->setPixmap(player1.scaled(ui->label_player1->width(),ui->label_player1->height(),Qt::KeepAspectRatio));
+        ui->label_player2->setPixmap(player2.scaled(ui->label_player2->width(),ui->label_player2->height(),Qt::KeepAspectRatio));
+        ui->label_player3->setPixmap(player3.scaled(ui->label_player3->width(),ui->label_player3->height(),Qt::KeepAspectRatio));
+        ui->label_player4->setPixmap(player4.scaled(ui->label_player4->width(),ui->label_player4->height(),Qt::KeepAspectRatio));
+        ui->label_player5->setPixmap(player5.scaled(ui->label_player5->width(),ui->label_player5->height(),Qt::KeepAspectRatio));
+        ui->label_player6->setPixmap(player6.scaled(ui->label_player6->width(),ui->label_player6->height(),Qt::KeepAspectRatio));
+        ui->label_player7->setPixmap(player7.scaled(ui->label_player7->width(),ui->label_player7->height(),Qt::KeepAspectRatio));
+        ui->label_player8->setPixmap(player8.scaled(ui->label_player8->width(),ui->label_player8->height(),Qt::KeepAspectRatio));
+        break;
+    }
+
+
+}
+
 
 
 void board::setPlayerInfoVal()
@@ -72,26 +188,34 @@ void board::setPlayerInfoVal()
         case 2:
               ui->groupBox_player1->show();
               ui->groupBox_player2->show();
-
               ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
               ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
-//               ui->label_money_player1->setText("1500");
-//                ui->label_money_player2->setText("1500");
+
+              ui->label_money_player1->setText(QString::number(money[0]));
+              ui->label_money_player2->setText(QString::number(money[1]));
               ui->label_status_player1->setText("ok");
               ui->label_status_player2->setText("ok");
+              showPlayeInMap(2);
             break;
         case 3:
             ui->groupBox_player1->show();
             ui->groupBox_player2->show();
             ui->groupBox_player3->show();
 
+
             ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
             ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
             ui->groupBox_player3->setTitle(nameOfPlayerss[2]);
 
+            ui->label_money_player1->setText(QString::number(money[0]));
+            ui->label_money_player2->setText(QString::number(money[1]));
+            ui->label_money_player3->setText(QString::number(money[2]));
+
             ui->label_status_player1->setText("ok");
             ui->label_status_player2->setText("ok");
             ui->label_status_player3->setText("ok");
+
+             showPlayeInMap(3);
             break;
         case 4:
         ui->groupBox_player1->show();
@@ -105,15 +229,17 @@ void board::setPlayerInfoVal()
         ui->groupBox_player4->setTitle(nameOfPlayerss[3]);
 
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
 
         ui->label_status_player1->setText("ok");
         ui->label_status_player2->setText("ok");
         ui->label_status_player3->setText("ok");
         ui->label_status_player4->setText("ok");
+
+        showPlayeInMap(4);
             break;
         case 5:
         ui->groupBox_player1->show();
@@ -122,11 +248,11 @@ void board::setPlayerInfoVal()
         ui->groupBox_player4->show();
         ui->groupBox_player5->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
         ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
@@ -139,6 +265,8 @@ void board::setPlayerInfoVal()
         ui->label_status_player3->setText("ok");
         ui->label_status_player4->setText("ok");
         ui->label_status_player5->setText("ok");
+
+        showPlayeInMap(5);
             break;
         case 6:
         ui->groupBox_player1->show();
@@ -148,12 +276,12 @@ void board::setPlayerInfoVal()
         ui->groupBox_player5->show();
         ui->groupBox_player6->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
-//        ui->label_money_player6->setText(QString::number(money[5]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player6->setText(QString::number(money[5]));
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
         ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
@@ -168,6 +296,8 @@ void board::setPlayerInfoVal()
         ui->label_status_player4->setText("ok");
         ui->label_status_player5->setText("ok");
         ui->label_status_player6->setText("ok");
+
+        showPlayeInMap(6);
             break;
         case 7:
         ui->groupBox_player1->show();
@@ -178,13 +308,13 @@ void board::setPlayerInfoVal()
         ui->groupBox_player6->show();
         ui->groupBox_player7->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
-//        ui->label_money_player6->setText(QString::number(money[5]));
-//        ui->label_money_player7->setText(QString::number(money[6]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player6->setText(QString::number(money[5]));
+        ui->label_money_player7->setText(QString::number(money[6]));
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
         ui->groupBox_player2->setTitle(nameOfPlayerss[1]);
@@ -201,6 +331,8 @@ void board::setPlayerInfoVal()
         ui->label_status_player5->setText("ok");
         ui->label_status_player6->setText("ok");
         ui->label_status_player7->setText("ok");
+
+        showPlayeInMap(7);
             break;
         case 8:
         ui->groupBox_player1->show();
@@ -212,14 +344,14 @@ void board::setPlayerInfoVal()
         ui->groupBox_player7->show();
         ui->groupBox_player8->show();
 
-//        ui->label_money_player1->setText(QString::number(money[0]));
-//        ui->label_money_player2->setText(QString::number(money[1]));
-//        ui->label_money_player3->setText(QString::number(money[2]));
-//        ui->label_money_player4->setText(QString::number(money[3]));
-//        ui->label_money_player5->setText(QString::number(money[4]));
-//        ui->label_money_player6->setText(QString::number(money[5]));
-//        ui->label_money_player7->setText(QString::number(money[6]));
-//        ui->label_money_player8->setText(QString::number(money[7]));
+        ui->label_money_player1->setText(QString::number(money[0]));
+        ui->label_money_player2->setText(QString::number(money[1]));
+        ui->label_money_player3->setText(QString::number(money[2]));
+        ui->label_money_player4->setText(QString::number(money[3]));
+        ui->label_money_player5->setText(QString::number(money[4]));
+        ui->label_money_player6->setText(QString::number(money[5]));
+        ui->label_money_player7->setText(QString::number(money[6]));
+        ui->label_money_player8->setText(QString::number(money[7]));
 
 
         ui->groupBox_player1->setTitle(nameOfPlayerss[0]);
@@ -239,6 +371,8 @@ void board::setPlayerInfoVal()
           ui->label_status_player6->setText("ok");
           ui->label_status_player7->setText("ok");
           ui->label_status_player8->setText("ok");
+
+          showPlayeInMap(8);
             break;
 
 
@@ -461,6 +595,8 @@ void board::on_pushButton_orange3_clicked()
 
 void board::on_pushButton_5_clicked()
 {
+
+
     srand(time(0));  // Initialize random number generator.
     int number1 = (rand()%6)+1;
     int number2 = (rand()%6)+1;
@@ -521,6 +657,105 @@ void board::on_pushButton_5_clicked()
 
       QPixmap image2(addressImage2);
       ui->number2->setPixmap(image2.scaled(ui->number2->width(),ui->number2->height(),Qt::KeepAspectRatio));
+
+
+        static int i =0;
+        tas[i]=result;
+        if(i+1==countOfPlayers)
+        {
+            resultTas();
+            ui->pushButton_5->hide();
+            nobatPlayer(countOfPlayers);
+            setFirstData(turnU,money,countOfPlayers);
+        }
+        i++;
 }
 
+
+
+void board::nobatPlayer(int number)
+{
+    switch (number) {
+        case 2 :
+            ui->label_nobat1->setText(QString::number(turnU[0][1]+1));
+            ui->label_nobat2->setText(QString::number(turnU[1][1]+1));
+         break;
+        case 3 :
+            ui->label_nobat1->setText(QString::number(turnU[0][1]+1));
+            ui->label_nobat2->setText(QString::number(turnU[1][1]+1));
+            ui->label_nobat3->setText(QString::number(turnU[2][1]+1));
+         break;
+        case 4 :
+            ui->label_nobat1->setText(QString::number(turnU[0][1]+1));
+            ui->label_nobat2->setText(QString::number(turnU[1][1]+1));
+            ui->label_nobat3->setText(QString::number(turnU[2][1]+1));
+            ui->label_nobat4->setText(QString::number(turnU[3][1]+1));
+         break;
+        case 5 :
+            ui->label_nobat1->setText(QString::number(turnU[0][1]+1));
+            ui->label_nobat2->setText(QString::number(turnU[1][1]+1));
+            ui->label_nobat3->setText(QString::number(turnU[2][1]+1));
+            ui->label_nobat4->setText(QString::number(turnU[3][1]+1));
+            ui->label_nobat5->setText(QString::number(turnU[4][1]+1));
+         break;
+        case 6 :
+            ui->label_nobat1->setText(QString::number(turnU[0][1]+1));
+            ui->label_nobat2->setText(QString::number(turnU[1][1]+1));
+            ui->label_nobat3->setText(QString::number(turnU[2][1]+1));
+            ui->label_nobat4->setText(QString::number(turnU[3][1]+1));
+            ui->label_nobat5->setText(QString::number(turnU[4][1]+1));
+            ui->label_nobat6->setText(QString::number(turnU[5][1]+1));
+         break;
+        case 7 :
+            ui->label_nobat1->setText(QString::number(turnU[0][1]+1));
+            ui->label_nobat2->setText(QString::number(turnU[1][1]+1));
+            ui->label_nobat3->setText(QString::number(turnU[2][1]+1));
+            ui->label_nobat4->setText(QString::number(turnU[3][1]+1));
+            ui->label_nobat5->setText(QString::number(turnU[4][1]+1));
+            ui->label_nobat6->setText(QString::number(turnU[5][1]+1));
+            ui->label_nobat7->setText(QString::number(turnU[6][1]+1));
+         break;
+        case 8 :
+            ui->label_nobat1->setText(QString::number(turnU[0][1]+1));
+            ui->label_nobat2->setText(QString::number(turnU[1][1]+1));
+            ui->label_nobat3->setText(QString::number(turnU[2][1]+1));
+            ui->label_nobat4->setText(QString::number(turnU[3][1]+1));
+            ui->label_nobat5->setText(QString::number(turnU[4][1]+1));
+            ui->label_nobat6->setText(QString::number(turnU[5][1]+1));
+            ui->label_nobat7->setText(QString::number(turnU[6][1]+1));
+            ui->label_nobat8->setText(QString::number(turnU[7][1]+1));
+
+         break;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+void board::resultTas()
+{
+
+    for (int i=0;i < countOfPlayers  ;i++ ) {
+        int tartib=0;
+
+            for (int j=0; j<countOfPlayers ;j++ ) {
+                if(tas[i]<tas[j])
+                {
+                    tartib ++ ;
+                }
+            }
+        turnU[i][1]=tartib;
+        qDebug () << "player :"<< turnU[i][0] << "   "<< "turn :" << turnU[i][1];
+
+    }
+
+
+}
 
