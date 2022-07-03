@@ -9,12 +9,14 @@
 #include <ctime>
 #include <cstdlib>
 #include "iostream"
+#include "UsersData.h"
+
 using namespace std ;
 QT_BEGIN_NAMESPACE
 namespace Ui { class board; }
 QT_END_NAMESPACE
 
-class board : public QMainWindow
+class board : public QMainWindow , public UsersData
 {
     Q_OBJECT
 
@@ -30,16 +32,17 @@ public:
     showCards lightPurple[3];
     showCards orange[3];
     void resultTas();
-     int result ;
+    int result;
     int turnU[8][2];
-     int money[8];
-     int tas[8];
+    int money[8];
+    int tas[8];
 
     QString nameOfPlayerss[8];
     int countOfPlayers;
-     void playerCount(QString names[8], int count);
-     void setPlayerInfoVal();
-
+    void playerCount(QString names[8], int count);
+    void setPlayerInfoVal();
+    void showPlayeInMap(int number);
+    void nobatPlayer(int number);
 private slots:
 
     void on_pushButton_red1_clicked();
