@@ -10,13 +10,13 @@
 #include <cstdlib>
 #include "iostream"
 #include "UsersData.h"
-
+#include "movement.h"
 using namespace std ;
 QT_BEGIN_NAMESPACE
 namespace Ui { class board; }
 QT_END_NAMESPACE
 
-class board : public QMainWindow , public UsersData
+class board : public QMainWindow ,public movement , public UsersData
 {
     Q_OBJECT
 
@@ -43,6 +43,8 @@ public:
     void setPlayerInfoVal();
     void showPlayeInMap(int number);
     void nobatPlayer(int number);
+
+    int nobatNahayi=0;
 private slots:
 
     void on_pushButton_red1_clicked();
@@ -67,7 +69,7 @@ private slots:
     void on_pushButton_orange1_clicked();
     void on_pushButton_orange2_clicked();
     void on_pushButton_orange3_clicked();
-
+    void on_pushButton_run_clicked();
 
     void on_pushButton_5_clicked();
 

@@ -193,6 +193,8 @@ void MainWindow::on_pushButton_run_clicked()
         case 2:
               nameOfPlayers[0]=ui->lineEdit_name1->text();
               nameOfPlayers[1]=ui->lineEdit_name2->text();
+
+              setNameOfPlayer(nameOfPlayers,numberOfPlayers);
               for (int i=0;i<2 ; i++) {
                   if(nameOfPlayers[i]=="")
                   {
@@ -205,6 +207,7 @@ void MainWindow::on_pushButton_run_clicked()
                 nameOfPlayers[0]=ui->lineEdit_name1->text();
                 nameOfPlayers[1]=ui->lineEdit_name2->text();
                 nameOfPlayers[2]=ui->lineEdit_name3->text();
+                 setNameOfPlayer(nameOfPlayers,numberOfPlayers);
                 for (int i=0;i<3 ; i++) {
                     if(nameOfPlayers[i]=="")
                     {
@@ -219,6 +222,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[1]=ui->lineEdit_name2->text();
         nameOfPlayers[2]=ui->lineEdit_name3->text();
         nameOfPlayers[3]=ui->lineEdit_name4->text();
+         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<4 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -233,6 +237,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[2]=ui->lineEdit_name3->text();
         nameOfPlayers[3]=ui->lineEdit_name4->text();
         nameOfPlayers[4]=ui->lineEdit_name5->text();
+         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<5 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -248,6 +253,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[3]=ui->lineEdit_name4->text();
         nameOfPlayers[4]=ui->lineEdit_name5->text();
         nameOfPlayers[5]=ui->lineEdit_name6->text();
+         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<6 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -264,6 +270,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[4]=ui->lineEdit_name5->text();
         nameOfPlayers[5]=ui->lineEdit_name6->text();
         nameOfPlayers[6]=ui->lineEdit_name7->text();
+         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<7 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -281,6 +288,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[5]=ui->lineEdit_name6->text();
         nameOfPlayers[6]=ui->lineEdit_name7->text();
         nameOfPlayers[7]=ui->lineEdit_name8->text();
+         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<8 ; i++) {
             if(nameOfPlayers[i]=="")
             {

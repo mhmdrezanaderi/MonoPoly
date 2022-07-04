@@ -14,6 +14,7 @@ SOURCES += \
     cards.cpp \
     main.cpp \
     mainwindow.cpp \
+    movement.cpp \
     showCards.cpp
 
 HEADERS += \
@@ -21,6 +22,7 @@ HEADERS += \
     board.h \
     cards.h \
     mainwindow.h \
+    movement.h \
     showCards.h
 
 FORMS += \
