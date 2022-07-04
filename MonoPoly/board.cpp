@@ -8,6 +8,8 @@
 #include "showCards.h"
 #include "iostream"
 #include "UsersData.h"
+#include "QMessageBox"
+#include "movement.h"
 
 using namespace std;
 board::board(QWidget *parent)
@@ -19,7 +21,7 @@ board::board(QWidget *parent)
     qDebug()<<a.address;
     QPixmap p(a.address);
 
-
+    setMapLocation(); /// location of map
 
     ui->chanceCards->setPixmap(p.scaled(ui->chanceCards->width(),ui->chanceCards->height(),Qt::KeepAspectRatio));
 
@@ -55,7 +57,7 @@ board::board(QWidget *parent)
     ui->label_player7->hide();
     ui->label_player8->hide();
 
-
+    ui->pushButton_run->hide();
 
 
 }
@@ -667,9 +669,212 @@ void board::on_pushButton_5_clicked()
             ui->pushButton_5->hide();
             nobatPlayer(countOfPlayers);
             setFirstData(turnU,money,countOfPlayers);
+            QMessageBox::information(this,"Message","Ok, Now U can Play. Enjoy it ;)" );
+
+            ui->pushButton_run->show();
         }
         i++;
 }
+
+void board::on_pushButton_run_clicked()
+{
+
+
+    srand(time(0));  // Initialize random number generator.
+    int number1 = (rand()%6)+1;
+    int number2 = (rand()%6)+1;
+     result = number1+number2;
+
+    QString addressImage1;
+    switch(number1)
+    {
+        case 1:
+          addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/one.jpg";
+            break;
+        case 2:
+            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/two.jpg";
+            break;
+        case 3:
+            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/three.jpg";
+            break;
+        case 4:
+            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/four.jpg";
+            break;
+        case 5:
+            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/five.jpg";
+            break;
+        case 6:
+            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/six.jpg";
+            break;
+
+
+    }
+     QPixmap image1(addressImage1);
+     ui->number1->setPixmap(image1.scaled(ui->number1->width(),ui->number1->height(),Qt::KeepAspectRatio));
+
+
+    QString addressImage2;
+     switch(number2)
+     {
+         case 1:
+           addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/one.jpg";
+             break;
+         case 2:
+             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/two.jpg";
+             break;
+         case 3:
+             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/three.jpg";
+             break;
+         case 4:
+             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/four.jpg";
+             break;
+         case 5:
+             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/five.jpg";
+             break;
+         case 6:
+             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/six.jpg";
+             break;
+
+
+     }
+
+      QPixmap image2(addressImage2);
+      ui->number2->setPixmap(image2.scaled(ui->number2->width(),ui->number2->height(),Qt::KeepAspectRatio));
+
+
+      static int nobatPlayer=0;
+
+      if(nobatPlayer==countOfPlayers)
+      {
+        nobatPlayer=0;
+      }
+
+      for (int i=0;i<countOfPlayers ;i++ ) {
+
+          if(NobatOfEveryPlayer[i][1]==nobatPlayer)
+          {
+
+             nobatNahayi=NobatOfEveryPlayer[i][0];
+          }
+
+
+      }
+
+
+  //    movementPlayer(nobatNahayi);
+      switch(nobatNahayi)
+      {
+          case 0:
+          static int locResult = 0;
+          locResult=result+locResult;
+            if(locResult>=32)
+            {
+               locResult= locResult -32;
+            }
+          ui->label_player1->setGeometry(location[locResult][0],location[locResult][1],28,28);
+          ui->label_player1->update();
+             break;
+
+
+
+          case 1:
+          static int locResult1 = 0;
+          locResult1=result+locResult1;
+          if(locResult1>=32)
+          {
+             locResult1= locResult1 -32;
+          }
+          ui->label_player2->setGeometry(location[locResult1][0],location[locResult1][1],28,28);
+          ui->label_player2->update();
+             break;
+          case 2:
+          static int locResult2 = 0;
+          locResult2=result+locResult2;
+
+          if(locResult2>=32)
+          {
+             locResult2= locResult2 -32;
+          }
+          ui->label_player3->setGeometry(location[locResult2][0],location[locResult2][1],28,28);
+          ui->label_player3->update();
+             break;
+          case 3:
+          static int locResult3 = 0;
+          locResult3=result+locResult3;
+          if(locResult3>=32)
+          {
+             locResult3= locResult3 -32;
+          }
+          ui->label_player4->setGeometry(location[locResult3][0],location[locResult3][1],28,28);
+          ui->label_player4->update();
+             break;
+
+
+
+          case 4:
+          static int locResult4 = 0;
+          locResult4=result+locResult4;
+          if(locResult4>=32)
+          {
+              locResult4=locResult4 -32;
+          }
+
+          ui->label_player5->setGeometry(location[locResult4][0],location[locResult4][1],28,28);
+          ui->label_player5->update();
+             break;
+
+
+
+          case 5:
+          static int locResult5 = 0;
+          locResult5=result+locResult5;
+
+          if(locResult5>=32)
+          {
+            locResult5 = locResult5 -32;
+          }
+          ui->label_player6->setGeometry(location[locResult5][0],location[locResult5][1],28,28);
+          ui->label_player6->update();
+             break;
+
+
+
+          case 6:
+          static int locResult6 = 0;
+          locResult6=result+locResult6;
+          if(locResult6>=32)
+          {
+            locResult6=  locResult6 -32;
+          }
+
+          ui->label_player7->setGeometry(location[locResult6][0],location[locResult6][1],28,28);
+          ui->label_player7->update();
+             break;
+
+
+
+          case 7:
+          static int locResult7= 0;
+          locResult7=result+locResult7;
+          if(locResult7>=32)
+          {
+            locResult7 = locResult7 -32;
+          }
+
+          ui->label_player8->setGeometry(location[locResult7][0],location[locResult7][1],28,28);
+          ui->label_player8->update();
+             break;
+
+
+      }
+
+
+
+   nobatPlayer++;
+
+
+}
+
 
 
 
@@ -727,6 +932,11 @@ void board::nobatPlayer(int number)
 
          break;
     }
+
+
+
+
+
 }
 
 
@@ -752,7 +962,7 @@ void board::resultTas()
                 }
             }
         turnU[i][1]=tartib;
-        qDebug () << "player :"<< turnU[i][0] << "   "<< "turn :" << turnU[i][1];
+//        qDebug () << "player :"<< turnU[i][0] << "   "<< "turn :" << turnU[i][1];
 
     }
 
