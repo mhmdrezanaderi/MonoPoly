@@ -1,12 +1,14 @@
 #ifndef SHOWCARDS_H
 #define SHOWCARDS_H
 
-
+#include "UsersData.h"
 #include "cards.h"
 #include "ui_showCards.h"
 #include <QMainWindow>
 #include "QWidget"
 #include <QPixmap>
+#include "QMessageBox"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class showCards; }
 QT_END_NAMESPACE
@@ -30,15 +32,20 @@ public:
     int mortgageVal;
     int housesCost;
     int hotelCost;
-
+    void whichCard(int locX,int locY);
+    int locationX;
+    int locationY;
     QString backgroundColor;
     void setbackgroundColor( QString backgroundColor_c);
     void setUi();
+    UsersData *allUserData;
 private slots:
 
 
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::showCards *ui;

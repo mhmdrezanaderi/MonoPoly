@@ -11,7 +11,7 @@ showCards::showCards(QWidget *parent)
     , ui(new Ui::showCards)
 {
     ui->setupUi(this);
-
+    allUserData = UsersData::singleton();
 
 }
 void showCards::setUi()
@@ -56,3 +56,32 @@ void showCards::on_pushButton_2_clicked()
     close();
 }
 
+void showCards::on_pushButton_clicked()
+{
+
+    qDebug ()<< "whichPlayer" <<allUserData->whichPlayer;
+
+     qDebug ()<< "locationX" <<locationX;
+
+     qDebug ()<< "newLocationx" <<allUserData->newLocation[0][0];
+      qDebug ()<< "locationY" <<locationY;
+      qDebug ()<< "newLocationy" <<allUserData->newLocation[0][1];
+
+
+    if(locationX == allUserData->newLocation[allUserData->whichPlayer][0] && locationY == allUserData->newLocation[allUserData->whichPlayer][1])
+    {
+        qDebug ()<< "correct";
+    }
+    else
+    {
+        QMessageBox::information(this,"Wrong","player "+ QString::number(allUserData->whichPlayer)+" U are not in correct location" );
+
+
+    }
+}
+
+void showCards::whichCard(int locX, int locY)
+{
+    locationX = locX;
+    locationY = locY;
+}

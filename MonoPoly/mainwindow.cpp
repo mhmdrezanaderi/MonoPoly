@@ -11,8 +11,10 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    allUserData = UsersData::singleton();
+
     ui->setupUi(this);
-    QPixmap p("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/firstPage.png");
+    QPixmap p(":/images/images/firstPage.png");
      ui->label_image->setPixmap(p.scaled(ui->label_image->width(),ui->label_image->height(),Qt::KeepAspectRatio));
      ui->label_2->close();
      ui->groupBox->close();
@@ -194,7 +196,7 @@ void MainWindow::on_pushButton_run_clicked()
               nameOfPlayers[0]=ui->lineEdit_name1->text();
               nameOfPlayers[1]=ui->lineEdit_name2->text();
 
-              setNameOfPlayer(nameOfPlayers,numberOfPlayers);
+             allUserData-> setNameOfPlayer(nameOfPlayers,numberOfPlayers);
               for (int i=0;i<2 ; i++) {
                   if(nameOfPlayers[i]=="")
                   {
@@ -207,7 +209,7 @@ void MainWindow::on_pushButton_run_clicked()
                 nameOfPlayers[0]=ui->lineEdit_name1->text();
                 nameOfPlayers[1]=ui->lineEdit_name2->text();
                 nameOfPlayers[2]=ui->lineEdit_name3->text();
-                 setNameOfPlayer(nameOfPlayers,numberOfPlayers);
+                allUserData-> setNameOfPlayer(nameOfPlayers,numberOfPlayers);
                 for (int i=0;i<3 ; i++) {
                     if(nameOfPlayers[i]=="")
                     {
@@ -222,7 +224,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[1]=ui->lineEdit_name2->text();
         nameOfPlayers[2]=ui->lineEdit_name3->text();
         nameOfPlayers[3]=ui->lineEdit_name4->text();
-         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
+        allUserData-> setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<4 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -237,7 +239,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[2]=ui->lineEdit_name3->text();
         nameOfPlayers[3]=ui->lineEdit_name4->text();
         nameOfPlayers[4]=ui->lineEdit_name5->text();
-         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
+        allUserData-> setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<5 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -253,7 +255,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[3]=ui->lineEdit_name4->text();
         nameOfPlayers[4]=ui->lineEdit_name5->text();
         nameOfPlayers[5]=ui->lineEdit_name6->text();
-         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
+         allUserData->setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<6 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -270,7 +272,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[4]=ui->lineEdit_name5->text();
         nameOfPlayers[5]=ui->lineEdit_name6->text();
         nameOfPlayers[6]=ui->lineEdit_name7->text();
-         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
+        allUserData-> setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<7 ; i++) {
             if(nameOfPlayers[i]=="")
             {
@@ -288,7 +290,7 @@ void MainWindow::on_pushButton_run_clicked()
         nameOfPlayers[5]=ui->lineEdit_name6->text();
         nameOfPlayers[6]=ui->lineEdit_name7->text();
         nameOfPlayers[7]=ui->lineEdit_name8->text();
-         setNameOfPlayer(nameOfPlayers,numberOfPlayers);
+         allUserData->setNameOfPlayer(nameOfPlayers,numberOfPlayers);
         for (int i=0;i<8 ; i++) {
             if(nameOfPlayers[i]=="")
             {

@@ -21,7 +21,6 @@ void chanceCards::setval(QString title,QString address_c )
 {
     allcards::title = title;
     address = address_c;
-    qDebug()<< address;
 }
 
 

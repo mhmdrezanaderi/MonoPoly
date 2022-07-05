@@ -17,14 +17,13 @@ board::board(QWidget *parent)
     , ui(new Ui::board)
 {
     ui->setupUi(this);
-    a.setval("abd","E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/Advance_To_Boardwalk.webp");
-    qDebug()<<a.address;
+    a.setval("abd",":/images/images/Advance_To_Boardwalk.webp");
     QPixmap p(a.address);
 
     setMapLocation(); /// location of map
 
     ui->chanceCards->setPixmap(p.scaled(ui->chanceCards->width(),ui->chanceCards->height(),Qt::KeepAspectRatio));
-
+    allUserData = UsersData::singleton();
     ui->pushButton_red1->setText("Kentucky Avenue ($220)");
     ui->pushButton_red2->setText("Indiana Avenue ($220)");
     ui->pushButton_red3->setText("Illinois Avenue ($240)");
@@ -77,14 +76,14 @@ void board::playerCount(QString names[8], int count)
 void board::showPlayeInMap(int number)
 {
 
-    QPixmap player1("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player1.png");
-    QPixmap player2("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player2.png");
-    QPixmap player3("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player3.png");
-    QPixmap player4("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player4.png");
-    QPixmap player5("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player5.png");
-    QPixmap player6("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player6.png");
-    QPixmap player7("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player7.png");
-    QPixmap player8("E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/players/player8.png");
+    QPixmap player1(":/images/images/players/player1.png");
+    QPixmap player2(":/images/images/players/player2.png");
+    QPixmap player3(":/images/images/players/player3.png");
+    QPixmap player4(":/images/images/players/player4.png");
+    QPixmap player5(":/images/images/players/player5.png");
+    QPixmap player6(":/images/images/players/player6.png");
+    QPixmap player7(":/images/images/players/player7.png");
+    QPixmap player8(":/images/images/players/player8.png");
 
     switch (number) {
 
@@ -393,7 +392,10 @@ void board::on_pushButton_red1_clicked()
     red[0].setVal("Kentucky Avenue ",18,90,250,700,875,1050,110,150,150);
     red[0].setbackgroundColor("background-color:red;");
     red[0].setUi();
+    red[0].whichCard(213,3);
+
     red[0].show();
+
 }
 
 
@@ -403,6 +405,8 @@ void board::on_pushButton_red2_clicked()
     red[1].setVal("Indiana Avenue",18,90,250,700,875,1050,110,150,150);
     red[1].setbackgroundColor("background-color:red;");
     red[1].setUi();
+    red[1].whichCard(470,3);
+
     red[1].show();
 }
 
@@ -412,6 +416,8 @@ void board::on_pushButton_red3_clicked()
     red[2].setVal("Illinois Avenue",20,100,300,750,925,1100,120,150,150);
     red[2].setbackgroundColor("background-color:red;");
     red[2].setUi();
+    red[2].whichCard(638,3);
+
     red[2].show();
 }
 
@@ -422,6 +428,8 @@ void board::on_pushButton_yellow1_clicked()
     yellow[0].setVal("Atlantic Avenue",22,110,330,800,975,1150,130,150,150);
     yellow[0].setbackgroundColor("background-color:yellow;");
     yellow[0].setUi();
+    yellow[0].whichCard(749,3);
+
     yellow[0].show();
 }
 
@@ -432,6 +440,8 @@ void board::on_pushButton_yellow2_clicked()
     yellow[1].setVal("Ventnor Avenue",22,110,330,800,975,1150,130,150,150);
     yellow[1].setbackgroundColor("background-color:yellow;");
     yellow[1].setUi();
+    yellow[1].whichCard(917,3);
+
     yellow[1].show();
 }
 
@@ -441,6 +451,8 @@ void board::on_pushButton_yellow3_clicked()
     yellow[2].setVal("Marvin Gardens",24,120,360,850,1025,1200,140,150,150);
     yellow[2].setbackgroundColor("background-color:yellow;");
     yellow[2].setUi();
+    yellow[2].whichCard(1084,3);
+
     yellow[2].show();
 }
 
@@ -450,6 +462,8 @@ void board::on_pushButton_green1_clicked()
     green[0].setVal("Pacific Avenue",26,130,390,900,1100,1275,150,200,200);
     green[0].setbackgroundColor("background-color:green;");
     green[0].setUi();
+    green[0].whichCard(1252,137);
+
     green[0].show();
 }
 
@@ -459,6 +473,7 @@ void board::on_pushButton_green2_clicked()
     green[1].setVal("North Carolina Avenue ",26,130,390,900,1100,1275,150,200,200);
     green[1].setbackgroundColor("background-color:green;");
     green[1].setUi();
+    green[1].whichCard(1252,225);
     green[1].show();
 }
 
@@ -468,6 +483,8 @@ void board::on_pushButton_green3_clicked()
     green[2].setVal("Pennsylvania Avenue ",28,150,450,1000,1200,1400,160,200,200);
     green[2].setbackgroundColor("background-color:green;");
     green[2].setUi();
+    green[2].whichCard(1252,402);
+
     green[2].show();
 }
 
@@ -477,6 +494,8 @@ void board::on_pushButton_blue1_clicked()
     blue[0].setVal("Park Place",35,175,500,1100,1300,1500,175,200,200);
     blue[0].setbackgroundColor("background-color:#2D46B9;");
     blue[0].setUi();
+    blue[0].whichCard(1252,491);
+
     blue[0].show();
 }
 
@@ -486,6 +505,9 @@ void board::on_pushButton_blue2_clicked()
     blue[1].setVal("Boardwalk",50,200,600,1400,1700,2000,200,200,200);
     blue[1].setbackgroundColor("background-color:#2D46B9;");
     blue[1].setUi();
+    blue[1].whichCard(1252,668);
+
+
     blue[1].show();
 }
 
@@ -495,6 +517,8 @@ void board::on_pushButton_purple1_clicked()
     purple[0].setVal("Mediterranean Avenue",2,10,30,90,160,250,30,50,50);
     purple[0].setbackgroundColor("background-color:#890596;");
     purple[0].setUi();
+    purple[0].whichCard(1086,765);
+
     purple[0].show();
 }
 
@@ -504,7 +528,10 @@ void board::on_pushButton_purple2_clicked()
     purple[1].setVal("Baltic Avenue",4,20,60,180,320,450,30,50,50);
     purple[1].setbackgroundColor("background-color:#890596;");
     purple[1].setUi();
+    purple[1].whichCard(750,765);
+
     purple[1].show();
+
 }
 
 
@@ -514,6 +541,7 @@ void board::on_pushButton_lightBlue1_clicked()
     lightBlue[0].setVal("Oriental Avenue",6,30,90,270,400,550,50,50,50);
     lightBlue[0].setbackgroundColor("background-color:#1CC5DC;");
     lightBlue[0].setUi();
+     lightBlue[0].whichCard(585,765);
     lightBlue[0].show();
 }
 
@@ -523,6 +551,7 @@ void board::on_pushButton_lightBlue2_clicked()
     lightBlue[1].setVal("Vermont Avenue ",6,30,90,270,400,550,50,50,50);
     lightBlue[1].setbackgroundColor("background-color:#1CC5DC;");
     lightBlue[1].setUi();
+    lightBlue[1].whichCard(380,765);
     lightBlue[1].show();
 }
 
@@ -533,6 +562,8 @@ void board::on_pushButton_lightBlue3_clicked()
     lightBlue[2].setVal("Connecticut Avenue ",8,40,100,300,450,600,60,50,50);
     lightBlue[2].setbackgroundColor("background-color:#1CC5DC;");
     lightBlue[2].setUi();
+    lightBlue[2].whichCard(215,765);
+
     lightBlue[2].show();
 }
 
@@ -543,6 +574,7 @@ void board::on_pushButton_lightPurple1_clicked()
     lightPurple[0].setVal("St. Charles Place",10,50,150,450,625,750,70,100,100);
     lightPurple[0].setbackgroundColor("background-color:#ED50F1;");
     lightPurple[0].setUi();
+    lightPurple[0].whichCard(15,670);
     lightPurple[0].show();
 }
 
@@ -552,6 +584,8 @@ void board::on_pushButton_lightPurple2_clicked()
     lightPurple[1].setVal("States Avenue ",10,50,150,450,625,750,70,100,100);
     lightPurple[1].setbackgroundColor("background-color:#ED50F1;");
     lightPurple[1].setUi();
+    lightPurple[1].whichCard(15,580);
+
     lightPurple[1].show();
 }
 
@@ -562,6 +596,8 @@ void board::on_pushButton_lightPurple3_clicked()
     lightPurple[2].setVal("Virginia Avenue ",12,60,180,500,700,900,80,100,100);
     lightPurple[2].setbackgroundColor("background-color:#ED50F1;");
     lightPurple[2].setUi();
+    lightPurple[2].whichCard(15,490);
+
     lightPurple[2].show();
 }
 
@@ -572,6 +608,8 @@ void board::on_pushButton_orange1_clicked()
     orange[0].setVal("St. James Place ",14,70,200,550,750,950,90,100,100);
     orange[0].setbackgroundColor("background-color:#F37121;");
     orange[0].setUi();
+    orange[0].whichCard(15,404);
+
     orange[0].show();
 }
 
@@ -581,6 +619,7 @@ void board::on_pushButton_orange2_clicked()
     orange[1].setVal("States Avenue ",14,70,200,550,750,950,90,100,100);
     orange[1].setbackgroundColor("background-color:#F37121;");
     orange[1].setUi();
+     orange[1].whichCard(15,224);
     orange[1].show();
 }
 
@@ -591,6 +630,8 @@ void board::on_pushButton_orange3_clicked()
     orange[2].setVal("Virginia Avenue ",16,80,220,600,800,1000,100,100,100);
     orange[2].setbackgroundColor("background-color:#F37121;");
     orange[2].setUi();
+    orange[2].whichCard(15,133);
+
     orange[2].show();
 }
 
@@ -608,23 +649,24 @@ void board::on_pushButton_5_clicked()
     switch(number1)
     {
         case 1:
-          addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/one.jpg";
+          addressImage1 =  ":/images/images/one.jpg";
             break;
         case 2:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/two.jpg";
+            addressImage1 =  ":/images/images/two.jpg";
             break;
         case 3:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/three.jpg";
+            addressImage1 =  ":/images/images/three.jpg";
             break;
         case 4:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/four.jpg";
+            addressImage1 =  ":/images/images/four.jpg";
             break;
         case 5:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/five.jpg";
+            addressImage1 =  ":/images/images/five.jpg";
             break;
         case 6:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/six.jpg";
+            addressImage1 =  ":/images/images/six.jpg";
             break;
+
 
 
     }
@@ -636,23 +678,25 @@ void board::on_pushButton_5_clicked()
      switch(number2)
      {
          case 1:
-           addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/one.jpg";
+           addressImage2 =  ":/images/images/one.jpg";
              break;
          case 2:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/two.jpg";
+             addressImage2 =  ":/images/images/two.jpg";
              break;
          case 3:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/three.jpg";
+             addressImage2 =  ":/images/images/three.jpg";
              break;
          case 4:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/four.jpg";
+             addressImage2 =  ":/images/images/four.jpg";
              break;
          case 5:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/five.jpg";
+             addressImage2 =  ":/images/images/five.jpg";
              break;
          case 6:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/six.jpg";
+             addressImage2 =  ":/images/images/six.jpg";
              break;
+
+
 
 
      }
@@ -668,7 +712,7 @@ void board::on_pushButton_5_clicked()
             resultTas();
             ui->pushButton_5->hide();
             nobatPlayer(countOfPlayers);
-            setFirstData(turnU,money,countOfPlayers);
+            allUserData->setFirstData(turnU,money,countOfPlayers);
             QMessageBox::information(this,"Message","Ok, Now U can Play. Enjoy it ;)" );
 
             ui->pushButton_run->show();
@@ -679,7 +723,6 @@ void board::on_pushButton_5_clicked()
 void board::on_pushButton_run_clicked()
 {
 
-
     srand(time(0));  // Initialize random number generator.
     int number1 = (rand()%6)+1;
     int number2 = (rand()%6)+1;
@@ -688,24 +731,24 @@ void board::on_pushButton_run_clicked()
     QString addressImage1;
     switch(number1)
     {
-        case 1:
-          addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/one.jpg";
-            break;
-        case 2:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/two.jpg";
-            break;
-        case 3:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/three.jpg";
-            break;
-        case 4:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/four.jpg";
-            break;
-        case 5:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/five.jpg";
-            break;
-        case 6:
-            addressImage1 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/six.jpg";
-            break;
+            case 1:
+              addressImage1 =  ":/images/images/one.jpg";
+                break;
+            case 2:
+                addressImage1 =  ":/images/images/two.jpg";
+                break;
+            case 3:
+                addressImage1 =  ":/images/images/three.jpg";
+                break;
+            case 4:
+                addressImage1 =  ":/images/images/four.jpg";
+                break;
+            case 5:
+                addressImage1 =  ":/images/images/five.jpg";
+                break;
+            case 6:
+                addressImage1 =  ":/images/images/six.jpg";
+                break;
 
 
     }
@@ -717,22 +760,22 @@ void board::on_pushButton_run_clicked()
      switch(number2)
      {
          case 1:
-           addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/one.jpg";
+           addressImage2 =  ":/images/images/one.jpg";
              break;
          case 2:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/two.jpg";
+             addressImage2 =  ":/images/images/two.jpg";
              break;
          case 3:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/three.jpg";
+             addressImage2 =  ":/images/images/three.jpg";
              break;
          case 4:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/four.jpg";
+             addressImage2 =  ":/images/images/four.jpg";
              break;
          case 5:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/five.jpg";
+             addressImage2 =  ":/images/images/five.jpg";
              break;
          case 6:
-             addressImage2 =  "E:/k/university/term/computer/projectMonoPoly/MonoPoly/images/six.jpg";
+             addressImage2 =  ":/images/images/six.jpg";
              break;
 
 
@@ -749,12 +792,14 @@ void board::on_pushButton_run_clicked()
         nobatPlayer=0;
       }
 
+
+      // 0 , 1 , 2
       for (int i=0;i<countOfPlayers ;i++ ) {
 
-          if(NobatOfEveryPlayer[i][1]==nobatPlayer)
+          if(allUserData->NobatOfEveryPlayer[i][1]==nobatPlayer)
           {
 
-             nobatNahayi=NobatOfEveryPlayer[i][0];
+             nobatNahayi=allUserData->NobatOfEveryPlayer[i][0];
           }
 
 
@@ -772,7 +817,9 @@ void board::on_pushButton_run_clicked()
                locResult= locResult -32;
             }
           ui->label_player1->setGeometry(location[locResult][0],location[locResult][1],28,28);
-          ui->label_player1->update();
+          ui->label_player1->show();
+          allUserData->updateLocation(location[locResult][0],location[locResult][1],0);
+           qDebug ()<< "newLocationy" <<allUserData->newLocation[0][1];
              break;
 
 
@@ -785,7 +832,9 @@ void board::on_pushButton_run_clicked()
              locResult1= locResult1 -32;
           }
           ui->label_player2->setGeometry(location[locResult1][0],location[locResult1][1],28,28);
-          ui->label_player2->update();
+          ui->label_player2->show();
+         allUserData-> updateLocation(location[locResult1][0],location[locResult1][1],1);
+
              break;
           case 2:
           static int locResult2 = 0;
@@ -795,8 +844,10 @@ void board::on_pushButton_run_clicked()
           {
              locResult2= locResult2 -32;
           }
-          ui->label_player3->setGeometry(location[locResult2][0],location[locResult2][1],28,28);
+          ui->label_player3->setGeometry(location[locResult2][0]+20,location[locResult2][1]+20,28,28);
           ui->label_player3->update();
+         allUserData-> updateLocation(location[locResult2][0],location[locResult2][1],2);
+
              break;
           case 3:
           static int locResult3 = 0;
@@ -805,8 +856,10 @@ void board::on_pushButton_run_clicked()
           {
              locResult3= locResult3 -32;
           }
-          ui->label_player4->setGeometry(location[locResult3][0],location[locResult3][1],28,28);
+          ui->label_player4->setGeometry(location[locResult3][0]+20,location[locResult3][1]+20,28,28);
           ui->label_player4->update();
+         allUserData-> updateLocation(location[locResult3][0],location[locResult3][1],3);
+
              break;
 
 
@@ -819,8 +872,10 @@ void board::on_pushButton_run_clicked()
               locResult4=locResult4 -32;
           }
 
-          ui->label_player5->setGeometry(location[locResult4][0],location[locResult4][1],28,28);
+          ui->label_player5->setGeometry(location[locResult4][0]+20,location[locResult4][1]+20,28,28);
           ui->label_player5->update();
+          allUserData->updateLocation(location[locResult4][0],location[locResult4][1],4);
+
              break;
 
 
@@ -835,6 +890,8 @@ void board::on_pushButton_run_clicked()
           }
           ui->label_player6->setGeometry(location[locResult5][0],location[locResult5][1],28,28);
           ui->label_player6->update();
+         allUserData-> updateLocation(location[locResult5][0],location[locResult5][1],5);
+
              break;
 
 
@@ -849,6 +906,8 @@ void board::on_pushButton_run_clicked()
 
           ui->label_player7->setGeometry(location[locResult6][0],location[locResult6][1],28,28);
           ui->label_player7->update();
+         allUserData-> updateLocation(location[locResult6][0],location[locResult6][1],6);
+
              break;
 
 
@@ -861,20 +920,87 @@ void board::on_pushButton_run_clicked()
             locResult7 = locResult7 -32;
           }
 
-          ui->label_player8->setGeometry(location[locResult7][0],location[locResult7][1],28,28);
+          ui->label_player8->setGeometry(location[locResult7][0]+20,location[locResult7][1]+20,28,28);
           ui->label_player8->update();
+          allUserData->updateLocation(location[locResult7][0],location[locResult7][1],7);
+
              break;
 
 
       }
 
 
+      // check konim braraye tekrari omadan tas
+       static int check=0;
+       if(number1==number2)
+       {
+           check++;
+           if(check == 3)
+           {
+                checkTas(nobatNahayi);
+                nobatPlayer++;
+                // update location --> bug
+           }
+       }
 
-   nobatPlayer++;
+      //agar tas tekrari nabud nobat player badi
+      if(number1!=number2)
+      {
+          check = 0;
+          nobatPlayer++;
+      }
 
 
 }
 
+
+void board::checkTas(int player)
+{
+
+    switch (player) {
+            case 0:
+            ui->label_player1->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player1->show();
+               break;
+
+            case 1:
+            ui->label_player2->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player2->show();
+               break;
+            case 2:
+
+            ui->label_player3->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player3->show();
+               break;
+            case 3:
+            ui->label_player4->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player4->show();
+               break;
+
+            case 4:
+            ui->label_player5->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player5->show();
+               break;
+
+            case 5:
+            ui->label_player6->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player6->show();
+               break;
+
+            case 6:
+
+            ui->label_player7->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player7->show();
+               break;
+
+            case 7:
+            ui->label_player8->setGeometry(location[8][0],location[8][1],28,28);
+            ui->label_player8->update();
+               break;
+
+        }
+
+}
 
 
 
@@ -941,9 +1067,10 @@ void board::nobatPlayer(int number)
 
 
 
-
-
-
+//turnU[i][0]; // 1 ,2 ,3
+//tas[i]; //    9, 6, 5,
+//turnU[i][1]; 0 ,1 ,2;
+// first bug
 
 
 
@@ -951,6 +1078,8 @@ void board::nobatPlayer(int number)
 
 void board::resultTas()
 {
+
+
 
     for (int i=0;i < countOfPlayers  ;i++ ) {
         int tartib=0;
@@ -960,9 +1089,9 @@ void board::resultTas()
                 {
                     tartib ++ ;
                 }
+
             }
         turnU[i][1]=tartib;
-//        qDebug () << "player :"<< turnU[i][0] << "   "<< "turn :" << turnU[i][1];
 
     }
 

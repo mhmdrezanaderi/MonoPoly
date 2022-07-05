@@ -9,7 +9,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow,public UsersData
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
@@ -17,7 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     board d;
-
+     UsersData *allUserData;
     QString nameOfPlayers[8];
     int numberOfPlayers;
     int sw = 1;
