@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/Advance_To_Boardwalk.webp</file>
+        <file>images/firstPage.png</file>
+        <file>images/five.jpg</file>
+        <file>images/four.jpg</file>
+        <file>images/one.jpg</file>
+        <file>images/six.jpg</file>
+        <file>images/three.jpg</file>
+        <file>images/two.jpg</file>
+        <file>images/players/player1.png</file>
+        <file>images/players/player2.png</file>
+        <file>images/players/player3.png</file>
+        <file>images/players/player4.png</file>
+        <file>images/players/player5.png</file>
+        <file>images/players/player6.png</file>
+        <file>images/players/player7.png</file>
+        <file>images/players/player8.png</file>
+    </qresource>
+</RCC>

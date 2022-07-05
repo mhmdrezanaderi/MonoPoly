@@ -16,7 +16,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class board; }
 QT_END_NAMESPACE
 
-class board : public QMainWindow ,public movement , public UsersData
+class board : public QMainWindow ,public movement
 {
     Q_OBJECT
 
@@ -36,14 +36,14 @@ public:
     int turnU[8][2];
     int money[8];
     int tas[8];
-
+     UsersData *allUserData;
     QString nameOfPlayerss[8];
     int countOfPlayers;
     void playerCount(QString names[8], int count);
     void setPlayerInfoVal();
     void showPlayeInMap(int number);
     void nobatPlayer(int number);
-
+    void checkTas(int player);
     int nobatNahayi=0;
 private slots:
 
