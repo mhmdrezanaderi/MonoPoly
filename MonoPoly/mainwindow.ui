@@ -657,21 +657,18 @@ color: black
      <string>If U want to know how we can play this game please copy this url and search in browser :</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
       <x>110</x>
       <y>110</y>
-      <width>661</width>
-      <height>20</height>
+      <width>671</width>
+      <height>24</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>true</underline>
      </font>
     </property>
     <property name="text">
@@ -679,9 +676,6 @@ color: black
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
     </property>
    </widget>
    <zorder>pushButton</zorder>
@@ -696,7 +690,7 @@ color: black
    <zorder>pushButton_run</zorder>
    <zorder>pushButton_4</zorder>
    <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
+   <zorder>lineEdit</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -819,23 +813,23 @@ color: black
     </hint>
     <hint type="destinationlabel">
      <x>755</x>
-     <y>68</y>
+     <y>105</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>pushButton_4</sender>
    <signal>clicked()</signal>
-   <receiver>label_4</receiver>
+   <receiver>lineEdit</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1225</x>
-     <y>284</y>
+     <x>1210</x>
+     <y>300</y>
     </hint>
     <hint type="destinationlabel">
-     <x>661</x>
-     <y>93</y>
+     <x>741</x>
+     <y>148</y>
     </hint>
    </hints>
   </connection>

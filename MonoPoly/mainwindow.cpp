@@ -28,7 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
      ui->groupBox_11->close();
      ui->pushButton_run->hide();
      ui->label_3->hide();
-     ui->label_4->hide();
+     ui->lineEdit->hide();
 
 }
 

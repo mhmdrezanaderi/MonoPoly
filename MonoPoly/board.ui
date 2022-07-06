@@ -1860,6 +1860,11 @@ color:rgb(229, 229, 0);</string>
       <height>61</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent ;
+background-repeat:none;
+background:none;</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -3418,6 +3423,11 @@ color:rgb(255, 255, 255)</string>
       <width>28</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: transparent ;
+background-repeat:none;
+background:none;</string>
     </property>
     <property name="text">
      <string>1</string>

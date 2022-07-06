@@ -798,7 +798,7 @@ void board::on_pushButton_run_clicked()
             {
                locResult= locResult -32;
             }
-          ui->label_player1->setGeometry(location[locResult][0],location[locResult][1],28,28);
+          ui->label_player1->setGeometry(location[locResult][0]+20,location[locResult][1]+20,28,28);
           ui->label_player1->show();
           allUserData->updateLocation(location[locResult][0],location[locResult][1],0);
              break;
@@ -810,7 +810,7 @@ void board::on_pushButton_run_clicked()
           {
              locResult1= locResult1 -32;
           }
-          ui->label_player2->setGeometry(location[locResult1][0],location[locResult1][1],28,28);
+          ui->label_player2->setGeometry(location[locResult1][0]+20,location[locResult1][1]+20,28,28);
           ui->label_player2->show();
           allUserData-> updateLocation(location[locResult1][0],location[locResult1][1],1);
              break;
