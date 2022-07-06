@@ -23,7 +23,7 @@ color: black
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>90</y>
+      <y>140</y>
       <width>681</width>
       <height>681</height>
      </rect>
@@ -39,7 +39,7 @@ color: black
     <property name="geometry">
      <rect>
       <x>1170</x>
-      <y>230</y>
+      <y>190</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -99,8 +99,8 @@ color: black
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>970</x>
-      <y>90</y>
+      <x>950</x>
+      <y>50</y>
       <width>581</width>
       <height>91</height>
      </rect>
@@ -120,8 +120,8 @@ color: black
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>170</y>
+      <x>920</x>
+      <y>130</y>
       <width>681</width>
       <height>91</height>
      </rect>
@@ -141,8 +141,8 @@ color: black
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>310</y>
+      <x>980</x>
+      <y>340</y>
       <width>531</width>
       <height>191</height>
      </rect>
@@ -338,7 +338,7 @@ color: black
     <property name="geometry">
      <rect>
       <x>990</x>
-      <y>470</y>
+      <y>520</y>
       <width>511</width>
       <height>71</height>
      </rect>
@@ -434,7 +434,7 @@ color: black
     <property name="geometry">
      <rect>
       <x>990</x>
-      <y>550</y>
+      <y>600</y>
       <width>511</width>
       <height>71</height>
      </rect>
@@ -530,7 +530,7 @@ color: black
     <property name="geometry">
      <rect>
       <x>1070</x>
-      <y>630</y>
+      <y>680</y>
       <width>331</width>
       <height>80</height>
      </rect>
@@ -598,7 +598,7 @@ color: black
     <property name="geometry">
      <rect>
       <x>1170</x>
-      <y>720</y>
+      <y>770</y>
       <width>141</width>
       <height>31</height>
      </rect>
@@ -608,6 +608,80 @@ color: black
     </property>
     <property name="text">
      <string>RUN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>240</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(67, 194, 53)</string>
+    </property>
+    <property name="text">
+     <string>How to Play</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>681</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>If U want to know how we can play this game please copy this url and search in browser :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>110</y>
+      <width>661</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>https://monopoly.fandom.com/wiki/Monopoly</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
     </property>
    </widget>
    <zorder>pushButton</zorder>
@@ -620,6 +694,9 @@ color: black
    <zorder>gridLayoutWidget_4</zorder>
    <zorder>gridLayoutWidget_5</zorder>
    <zorder>pushButton_run</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -642,11 +719,11 @@ color: black
    <hints>
     <hint type="sourcelabel">
      <x>1314</x>
-     <y>289</y>
+     <y>255</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1371</x>
-     <y>182</y>
+     <x>1351</x>
+     <y>165</y>
     </hint>
    </hints>
   </connection>
@@ -658,11 +735,11 @@ color: black
    <hints>
     <hint type="sourcelabel">
      <x>1307</x>
-     <y>274</y>
+     <y>255</y>
     </hint>
     <hint type="destinationlabel">
      <x>1236</x>
-     <y>256</y>
+     <y>241</y>
     </hint>
    </hints>
   </connection>
@@ -674,7 +751,7 @@ color: black
    <hints>
     <hint type="sourcelabel">
      <x>1176</x>
-     <y>264</y>
+     <y>249</y>
     </hint>
     <hint type="destinationlabel">
      <x>1199</x>
@@ -690,11 +767,11 @@ color: black
    <hints>
     <hint type="sourcelabel">
      <x>1170</x>
-     <y>295</y>
+     <y>255</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1024</x>
-     <y>254</y>
+     <x>1014</x>
+     <y>239</y>
     </hint>
    </hints>
   </connection>
@@ -706,11 +783,59 @@ color: black
    <hints>
     <hint type="sourcelabel">
      <x>1186</x>
-     <y>294</y>
+     <y>255</y>
     </hint>
     <hint type="destinationlabel">
      <x>1053</x>
      <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1257</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1274</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>label_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1183</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>755</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>label_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1225</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>661</x>
+     <y>93</y>
     </hint>
    </hints>
   </connection>
