@@ -12,6 +12,7 @@ SOURCES += \
     UsersData.cpp \
     board.cpp \
     cards.cpp \
+    chanceCommunity.cpp \
     main.cpp \
     mainwindow.cpp \
     movement.cpp \
@@ -21,12 +22,14 @@ HEADERS += \
     UsersData.h \
     board.h \
     cards.h \
+    chanceCommunity.h \
     mainwindow.h \
     movement.h \
     showCards.h
 
 FORMS += \
     board.ui \
+    chanceCommunity.ui \
     mainwindow.ui \
     showCards.ui
 
