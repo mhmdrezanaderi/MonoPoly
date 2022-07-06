@@ -6,6 +6,10 @@
 #include <QPixmap>
 #include "QDebug"
 
+
+
+
+///////// class for set value of every chance card
 chanceCommunity::chanceCommunity(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::chanceCommunity)
@@ -25,10 +29,12 @@ chanceCommunity::chanceCommunity(QWidget *parent)
 //         communityCards[j]=b[j];
 //    }
 }
+
+
+
 int chanceCommunity::index =0 ;
 void chanceCommunity::chanceCardUi()
 {
-
     QPixmap card1(":/images/images/chance/Advance_To_Go 2.png");
     QPixmap card2(":/images/images/chance/Chance_ATIA3.png");
     QPixmap card3(":/images/images/chance/Chance_ATSCP 4.png");
@@ -45,8 +51,7 @@ void chanceCommunity::chanceCardUi()
     QPixmap card14(":/images/images/chance/Chance_YHBAECOTB15.jpg");
 
 
-    switch (chanceCards[index]) {
-
+  switch (chanceCards[index]) {
     case 1:
         ui->Cards->setPixmap(card1.scaled(ui->Cards->width(),ui->Cards->height(),Qt::KeepAspectRatio));
         break;
@@ -103,11 +108,8 @@ void chanceCommunity::chanceCardUi()
 }
 
 
-
 //int chanceCommunity::index2 =0 ;
-
 //void chanceCommunity::communityCardUi(){
-
 //    QPixmap card111(":/images/images/community/CC_Advance_to_Go1.png");
 //    QPixmap card22(":/images/images/community/Community_Chest_BEIYF4.png");
 //    QPixmap card33(":/images/images/community/Community_Chest_DF11.png");
@@ -180,6 +182,7 @@ void chanceCommunity::chanceCardUi()
 //    }
 
 //}
+
 
 void chanceCommunity::on_pushButton_clicked()
 {

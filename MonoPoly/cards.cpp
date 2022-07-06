@@ -9,34 +9,14 @@ allcards::allcards(QWidget *parent)
 
 
 }
-
-
 chanceCards::chanceCards()
 {
 
 }
-
 
 void chanceCards::setval(QString title,QString address_c )
 {
     allcards::title = title;
     address = address_c;
 }
-
-
-//communityChestCards::communityChestCards(QString title , QString address_c)
-//{
-//    allcards::title = title;
-
-////    address();
-// qDebug()<<address_c;
-//}
-
-
-//homeCards::homeCards(QString title , int rent_c)
-//{
-// allcards::title = title;
-// rent = rent_c;
-
-//}
 

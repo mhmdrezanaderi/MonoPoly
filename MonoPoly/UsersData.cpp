@@ -6,7 +6,7 @@
 #include "iostream"
 #include "UsersData.h"
 
-
+// basic database
 
 UsersData::UsersData()
 {
@@ -59,23 +59,16 @@ void UsersData::setNameOfPlayer(QString names[8],int count)
 
 void UsersData::updateLocation(int x , int y,int player)
 {
-    qDebug ()<< "player"<<player;
-
     whichPlayer = player;
-
     switch (player) {
         case 0:
-
             newLocation[0][0]=x;
             newLocation[0][1]=y;
-            qDebug ()<< "newLocationyyy000" << newLocation[0][1];
 
          break;
         case 1:
-
             newLocation[1][0]=x;
             newLocation[1][1]=y;
-            qDebug ()<< "newLocationyy111" << newLocation[1][1];
          break;
         case 2:
             newLocation[2][0]=x;

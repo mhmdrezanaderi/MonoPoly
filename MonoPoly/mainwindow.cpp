@@ -20,13 +20,10 @@ MainWindow::MainWindow(QWidget *parent)
      ui->groupBox->close();
      ui->groupBox_5->close();
      ui->groupBox_3->close();
-
      ui->groupBox_6->close();
      ui->groupBox_7->close();
-
      ui->groupBox_8->close();
      ui->groupBox_9->close();
-
      ui->groupBox_10->close();
      ui->groupBox_11->close();
      ui->pushButton_run->hide();

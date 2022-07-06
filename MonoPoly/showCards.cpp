@@ -4,8 +4,7 @@
 #include "ui_showCards.h"
 #include "cards.h"
 #include <QPixmap>
-#include "QDebug"
-
+#include <QDebug>
 showCards::showCards(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::showCards)
@@ -27,9 +26,10 @@ void showCards::setUi()
      ui->label_housesCost->setText(QString::number(housesCost));
      ui->label_mortgage->setText(QString::number(mortgageVal));
      ui->label_hotel->setText(QString::number(hotel));
-
 }
 
+
+//  set val of
 void showCards::setVal(QString nameOfHouse_c ,int rent_c,int oneHouse_c ,int twoHouses_c ,int threeHouses_c  ,int fourHouses_c  ,int hotel_c  ,int mortgageVal_c ,int housesCost_c  ,int hotelCost_c )
 {
     nameOfHouse=nameOfHouse_c;
@@ -46,6 +46,7 @@ void showCards::setVal(QString nameOfHouse_c ,int rent_c,int oneHouse_c ,int two
 }
 
 
+// set back
 void showCards::setbackgroundColor( QString backgroundColor_c)
 {
     backgroundColor=backgroundColor_c;
@@ -59,24 +60,13 @@ void showCards::on_pushButton_2_clicked()
 void showCards::on_pushButton_clicked()
 {
 
-    qDebug ()<< "whichPlayer" <<allUserData->whichPlayer;
-
-     qDebug ()<< "locationX" <<locationX;
-
-     qDebug ()<< "newLocationx" <<allUserData->newLocation[0][0];
-      qDebug ()<< "locationY" <<locationY;
-      qDebug ()<< "newLocationy" <<allUserData->newLocation[0][1];
-
-
     if(locationX == allUserData->newLocation[allUserData->whichPlayer][0] && locationY == allUserData->newLocation[allUserData->whichPlayer][1])
     {
         qDebug ()<< "correct";
     }
     else
     {
-        QMessageBox::information(this,"Wrong","player "+ QString::number(allUserData->whichPlayer)+" U are not in correct location" );
-
-
+        QMessageBox::information(this,"Wrong","player "+ QString::number(allUserData->whichPlayer +1)+" U are not in correct location" );
     }
 }
 
