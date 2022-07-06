@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chanceCommunity</class>
+ <widget class="QWidget" name="chanceCommunity">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>chanceCommunity</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(196, 223, 170);
+color:rgb(0, 0, 0)</string>
+  </property>
+  <widget class="QLabel" name="Cards">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>345</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>cards</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>210</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

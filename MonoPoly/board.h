@@ -11,6 +11,7 @@
 #include "iostream"
 #include "UsersData.h"
 #include "movement.h"
+#include "chanceCommunity.h"
 using namespace std ;
 QT_BEGIN_NAMESPACE
 namespace Ui { class board; }
@@ -45,6 +46,10 @@ public:
     void nobatPlayer(int number);
     void checkTas(int player);
     int nobatNahayi=0;
+
+    chanceCommunity chance;
+    chanceCommunity commi;
+
 private slots:
 
     void on_pushButton_red1_clicked();
@@ -72,6 +77,18 @@ private slots:
     void on_pushButton_run_clicked();
 
     void on_pushButton_5_clicked();
+
+    void on_pushButton_chance1_clicked();
+
+    void on_pushButton_chance2_clicked();
+
+    void on_pushButton_chance3_clicked();
+
+//    void on_pushButton_community2_clicked();
+
+//    void on_pushButton_community1_clicked();
+
+//    void on_pushButton_community3_clicked();
 
 private:
     Ui::board *ui;

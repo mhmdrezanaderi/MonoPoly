@@ -37,6 +37,15 @@ board::board(QWidget *parent)
     ui->pushButton_blue2->setText("Boardwalk ($400)");
     ui->pushButton_purple1->setText("Mediterranean Avenue ($60)");
     ui->pushButton_purple2->setText("Baltic Avenue ($60)");
+    ui->pushButton_lightBlue1->setText("Oriental Avenue ($100)");
+    ui->pushButton_lightBlue2->setText("Vermont Avenue ($100) ");
+    ui->pushButton_lightBlue3->setText("Connecticut Avenue ($120) ");
+    ui->pushButton_lightPurple1->setText("St. Charles Place ($140) ");
+    ui->pushButton_lightPurple2->setText("States Avenue ($140) ");
+    ui->pushButton_lightPurple3->setText("Virginia Avenue ($160) ");
+    ui->pushButton_orange1->setText("St. James Place ($180) ");
+    ui->pushButton_orange2->setText("Tennessee Avenue ($180) ");
+    ui->pushButton_orange3->setText("New York Avenue ($200) ");
 
     ui->groupBox_player1->hide();
     ui->groupBox_player2->hide();
@@ -1097,4 +1106,47 @@ void board::resultTas()
 
 
 }
+
+
+void board::on_pushButton_chance1_clicked()
+{
+    chance.chanceCardUi();
+    chance.show();
+}
+
+
+void board::on_pushButton_chance2_clicked()
+{
+    chance.chanceCardUi();
+    chance.show();
+}
+
+
+void board::on_pushButton_chance3_clicked()
+{
+    chance.chanceCardUi();
+    chance.show();
+}
+
+
+//void board::on_pushButton_community2_clicked()
+//{
+//    commi.communityCardUi();
+//    commi.show();
+//}
+
+
+//void board::on_pushButton_community1_clicked()
+//{
+//    commi.communityCardUi();
+//    commi.show();
+//}
+
+
+//void board::on_pushButton_community3_clicked()
+//{
+//    commi.communityCardUi();
+//    commi.show();
+//}
+
 
