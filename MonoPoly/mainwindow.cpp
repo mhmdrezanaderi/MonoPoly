@@ -30,6 +30,8 @@ MainWindow::MainWindow(QWidget *parent)
      ui->groupBox_10->close();
      ui->groupBox_11->close();
      ui->pushButton_run->hide();
+     ui->label_3->hide();
+     ui->label_4->hide();
 
 }
 
@@ -311,4 +313,7 @@ void MainWindow::on_pushButton_run_clicked()
         this->hide();
     }
 }
+
+
+
 
